@@ -18,13 +18,15 @@ const GlobalStyle = createGlobalStyle`
     width:calc((100% - 1224px) / 2 + 440px);
     height:100%;
     background-color: rgba(40, 48, 63, 0.5);
+    z-index: 10;
   }
-
+  
   .banner-contents > *{
     position: relative;  
     line-height: 1.4;
+    z-index:20;
   }
-`;
+  `;
 
 const BannerInner = styled.div`
   width: 1224px;
@@ -60,7 +62,7 @@ const BannerDesc = styled.p`
   word-break: break-all;
 `;
 
-export default function HeroTitle() {
+export default function BannerContents() {
   return (
     <div className="banner">
       <GlobalStyle />

@@ -1,6 +1,6 @@
 import React from "react";
 import bgImgSrc from "../../assets/background.jpg";
-import BannerTitle from "./BannerContents";
+import BannerContents from "./BannerContents";
 import styled from "styled-components";
 
 const BannerBox = styled.div`
@@ -9,10 +9,10 @@ const BannerBox = styled.div`
   background: url(${bgImgSrc}) no-repeat center / cover;
 `;
 
-export default function Hero() {
+export default function Banner() {
   return (
     <BannerBox>
-      <BannerTitle />
+      <BannerContents />
     </BannerBox>
   );
 }
